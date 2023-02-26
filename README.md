@@ -12,3 +12,15 @@ Mis- and disinformation are a substantial global threat to our security and safe
 <p align="center">
 <img src="https://github.com/S-Abdelnabi/Fact-Saboteurs/blob/main/teaser.PNG" width="650">
 </p>
+
+### Citation ###
+
+- If you find this code helpful, please cite our paper:
+```javascript
+@inproceedings{abdelnabi22cvpr,
+    title = {Fact-Saboteurs: A Taxonomy of Evidence Manipulation Attacks against Fact-Verification Systems},
+    author = {Sahar Abdelnabi and Mario Fritz},
+    year = {2023},
+    booktitle = {USENIX Security Symposium (USENIX Security)}
+}
+```
