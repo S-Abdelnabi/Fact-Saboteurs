@@ -17,6 +17,10 @@
 	- **attacks_out_formatted** (intermediate step) 
 	    - output of attacks formatted in the same style of KGAT, i.e., claims with groups of evidence (attack result). 
 	- **postattack_retrieval**
-	    - this is the output of retrieval after the attack sentences are added/used to replace the original evidence.
-	    - this the is *final* output of the attack. Used to test the verification model. 
+	    - this is the output of retrieval after the attack sentences are added/used to replace the original evidence. 
+	    - directory may include different 
+	    - this the is ***final*** output of the attack. Used to test the verification model. 
+	- **paraphrased_claims**
+	    - the final retrieval files for the claim paraphrases experiments (this is then the input to the verification model).
+	    
 - Directories may include additional readme files to give more information about individual files.
