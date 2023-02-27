@@ -1,5 +1,5 @@
 ## Trained retrieval models
-- We provide our trained checkpoints: [Link](https://oc.cs.uni-saarland.de/owncloud/index.php/s/cZ5Jb5kCRkcmRnm). In addition to all [data](https://drive.google.com/drive/folders/1xbSzefjPm4Ii5WQSKX2C5wT5MydBkqcT?usp=sharing).
+- We provide our trained [checkpoints](https://oc.cs.uni-saarland.de/owncloud/index.php/s/cZ5Jb5kCRkcmRnm). In addition to all [data](https://drive.google.com/drive/folders/1xbSzefjPm4Ii5WQSKX2C5wT5MydBkqcT?usp=sharing).
 - If you need to re-train the models, please refer to the KGAT's [repository](https://github.com/thunlp/KernelGAT) for more details. Training data (in the same format as KGAT) is in *retrieval_training* under *raw_data* directory.
 
 ## Running the retrieval model without attacks
