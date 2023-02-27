@@ -63,15 +63,15 @@ python process_data_replace_n.py --test \
 
 ## Running the retrieval model with attacks under evidence "add" assumption
 - This step first *adds* the attack evidence to the original evidence. Then it runs the retrieval. 
-- Default number of added sentences is 2.
+- Default number of added sentences is 2. change *--evi_num* to specify others 
 
 ```
 python test_add_check_top5.py \
 --test_path_postattack <data_dir>/attacks_out_formatted/supporting_generation/gpt2_generate_refutes_nei_supports_model_trials250_sent2_kgat.json \
 --test_path_preattack <data_dir>/preattack_retrieval_formatted/bert_eval2.json \
 --test_path_all_data <data_dir>/raw_data/all_dev.json \
+--evi_num 2 \ 
 --name dev_add_gpt2_generate_refutes_nei_supports_model_trials250_sent2.json
-```
 
 python process_data_add.py --test \
 --retrieval_file_orig <data_dir>/preattack_retrieval_formatted/bert_eval2.json \
@@ -81,7 +81,6 @@ python process_data_add.py --test \
 --output <data_dir>/postattack_retrieval/gpt2_generate/gpt2_generate_refutes_nei_supports_model_trials250_sent2_retrieved_processed.json 
 ```
 
-## Running the retrieval model with attacks under evidence "add" assumption - Add *n* sentences only
 
 
 
