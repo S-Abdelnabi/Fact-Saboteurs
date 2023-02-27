@@ -9,12 +9,12 @@
 
 ```
 python test.py --outdir ./output/ \
---test_path ../data/all_dev.json \
+--test_path <data_dir>/raw_data/all_dev.json \
 --bert_pretrain ../bert_base \
 --checkpoint ../checkpoint/retrieval_model/model.best.pt \
 --name dev.json
 
-python process_data.py --retrieval_file ./output/dev.json --gold_file <data_dir>/golden_dev.json --output <data_dir>/bert_eval2.json --test
+python process_data.py --retrieval_file ./output/dev.json --gold_file <data_dir>/raw_data/golden_dev.json --output <data_dir>/preattack_retrieval_formatted/bert_eval2.json --test
 ```
 - *golden_dev.json* is under *raw_data* data directory.
 - Replace with your required checkpoint. 
