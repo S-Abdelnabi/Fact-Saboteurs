@@ -8,7 +8,7 @@
 - The KGAT pipeline first runs the retrieval. Then the verification step. 
 
 <p align="center">
-<img src="https://github.com/S-Abdelnabi/Fact-Saboteurs/blob/main/kgat/attacks_flow.PNG" width="450">
+<img src="https://github.com/S-Abdelnabi/Fact-Saboteurs/blob/main/kgat/attacks_flow.PNG" width="550">
 </p>
 
 
