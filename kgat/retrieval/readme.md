@@ -20,21 +20,40 @@ python process_data.py --retrieval_file ./output/dev.json --gold_file <data_dir>
 - Replace with your required checkpoint. 
 
 ## Running the retrieval model with attacks under evidence "replace" assumption
+- This step first replaces the original evidence with the attack evidence. This is done for all top-5 evidence sentences. Then it runs the retrieval. 
 - As an example, for the *imperceptible_homoglyph* attack:
 ```
-python test_replace_check_top5.py --test_path_postattack <attack_formatted_file> --name dev_intermediate.json
-
-python process_data_replace.py --test --retrieval_file_orig <data_dir>/bert_eval2.json --retrieval_file_attack ./output/dev_intermediate.json --gold_file <data_dir>/golden_dev.json \
---retrieval_file_orig_attacked <data_dir>/imperceptible_homoglyph_kgat.json \
---output attack_retrieved_processed.json \
+python test_replace_check_top5.py --test_path_postattack <data_dir>/attacks_out_formatted/imperceptible/imperceptible_homoglyph_kgat.json \ 
+--name dev_imperceptible_homoglyph_intermediate.json \
+--test_path_preattack <data_dir>/preattack_retrieval_formatted/bert_eval2.json \
+--test_path_all_data <data_dir>/raw_data/all_dev.json
 ```
+- *test_path_preattack* is the no-attack retrieval that was used as an input to the attack, under *preattack_retrieval_formatted* data directory. 
+- *test_path_postattack* is the attack output, formatted in the same way as KGAT, under *attacks_out_formatted* data directory.
 
-- This step first replaces the original evidence with the attack evidence. This is done for all top-5 evidence sentences. Then it runs the retrieval. 
-- *retrieval_file_orig* is the no-attack retrieval, under *preattack_retrieval_formatted* data directory. 
-- *retrieval_file_orig_attacked* is the attack output, formatted in the same way as KGAT, under *attacks_out_formatted* data directory.
+- Then run:
+```
+python process_data_replace.py --test --retrieval_file_orig <data_dir>/preattack_retrieval_formatted/bert_eval2.json \
+--retrieval_file_attack ./output/dev_imperceptible_homoglyph_intermediate.json \
+--gold_file <data_dir>/golden_dev.json \
+--retrieval_file_orig_attacked <data_dir>/attacks_out_formatted/imperceptible_homoglyph_kgat.json \
+--output <data_dir>/postattack_retrieval/imperceptible_homoglyph_retrieved_processed.json 
+```
 - The output of *process_data_replace.py* is the retrieval after the attack, used further in the verification step, found under *postattack_retrieval* data directory.
 
+## Running the retrieval model with attacks under evidence "replace" assumption - Replace only *n* sentences
+```
+python test_replace_n_check_top5.py --test_path_postattack <data_dir>/attacks_out_formatted/imperceptible/imperceptible_homoglyph_kgat.json \
+--test_path_preattack <data_dir>/preattack_retrieval_formatted/bert_eval2.json \
+--name dev_n1_imperceptible_homoglyph_intermediate.json \
+--test_path_all_data <data_dir>/raw_data/all_dev.json --num_sent 1 
 
+python process_data_replace_n.py --test --retrieval_file_orig <data_dir>/preattack_retrieval_formatted/bert_eval2.json \
+--retrieval_file_attack ./output/dev_n1_imperceptible_homoglyph_intermediate.json \
+--retrieval_file_orig_attacked <data_dir>/attacks_out_formatted/imperceptible/imperceptible_homoglyph_kgat.json \
+--gold_file <data_dir>/raw_data/golden_dev.json \
+--output <data_dir>/postattack_retrieval/imperceptible/imperceptible_homoglyph_n1_retrieved_processed.json 
+```
 
 
 
