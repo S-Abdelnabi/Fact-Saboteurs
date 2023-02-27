@@ -4,7 +4,7 @@
 
 ## Running the retrieval model without attacks
 
-- This step retrieves evidence given claims (baseline - no attacks). It yields the files in *preattack_retrieval_formatted*. 
+- This step retrieves evidence given claims (baseline - no attacks). It yields the files in *preattack_retrieval_formatted* data directory. 
 - The output is used for predictions later (baseline), or to run the attacks on the retrieved results.
 
 ```
@@ -32,7 +32,7 @@ python process_data_replace.py --test --retrieval_file_orig <data_dir>/bert_eval
 - This step first replaces the original evidence with the attack evidence. This is done for all top-5 evidence sentences. Then it runs the retrieval. 
 - *retrieval_file_orig* is the no-attack retrieval, under *preattack_retrieval_formatted* data directory. 
 - *retrieval_file_orig_attacked* is the attack output, formatted in the same way as KGAT, under *attacks_out_formatted* data directory.
-- The output of *process_data_replace.py* is the retrieval after the attack, used further in the verification step, under *postattack_retrieval* data directory.
+- The output of *process_data_replace.py* is the retrieval after the attack, used further in the verification step, found under *postattack_retrieval* data directory.
 
 
 
