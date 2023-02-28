@@ -15,7 +15,7 @@ python test.py --outdir ./output \
 ```
 
 # Running KGAT without attacks
-- Similar, but replace the test_path with the re-retrieval results (using the defender's verification model) of the attacks. These files can be found under *postattack_retrieval*.
+- Similar, but replace the test_path with the re-retrieval results (using the defender's retrieval model) of the attacks. These files can be found under *postattack_retrieval*.
 
 ```
 python test.py --outdir ./output \
