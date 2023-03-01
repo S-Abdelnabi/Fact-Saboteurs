@@ -20,7 +20,10 @@ Mis- and disinformation are a substantial global threat to our security and safe
 ### Content ###
 #### [Data](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/data) ####
 - We share our version of the raw data that was used to train the KGAT and attack models. 
-- We share the attack sentences.
+- We also share the attack sentences.
+
+#### [KGAT](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/kgat) ####
+- We share code to evaluate the attacks on KGAT in addition to checkpoints.
 
 - - -
 
