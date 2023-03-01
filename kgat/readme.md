@@ -5,7 +5,7 @@
 
 - To run the attacks on KGAT you first need to compute the attacks, or use our already computed attacks in the [data](https://drive.google.com/drive/folders/1xbSzefjPm4Ii5WQSKX2C5wT5MydBkqcT?usp=sharing) directory. 
 
-- The KGAT pipeline first runs the retrieval. Then the verification step. 
+- The KGAT pipeline first runs the retrieval. Then the verification step. KGAT uses BERT base models, which can be found [here](https://oc.cs.uni-saarland.de/owncloud/index.php/s/FJW2sNrKXrqmtSe).
 
 <p align="center">
 <img src="https://github.com/S-Abdelnabi/Fact-Saboteurs/blob/main/kgat/attacks_flow.PNG" width="550">
