@@ -3,6 +3,8 @@
 - Authors: [Sahar Abdelnabi](https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en), [Mario Fritz](https://cispa.saarland/group/fritz/)
 - To appear at USENIX Security '23
 - This repository contains code to reproduce our results from the paper. It is currently under reconstruction and we will keep updating it over the next weeks. 
+    - **Updates**
+        - 01/03/2023: Added data and KGAT retrieval and verification code. 
 
 - - -
 ### Abstract ###
