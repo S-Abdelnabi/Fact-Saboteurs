@@ -12,6 +12,14 @@ Mis- and disinformation are a substantial global threat to our security and safe
 <p align="center">
 <img src="https://github.com/S-Abdelnabi/Fact-Saboteurs/blob/main/teaser.PNG" width="650">
 </p>
+- - -
+### Content ###
+- ###Data###
+    - We share our version of the raw data that was used to train the KGAT and attack models. 
+    - We share the attack sentences.
+    - For links and detailed descriptions, see [Data](S-Abdelnabi/Fact-Saboteurs/tree/main/data).
+
+- - -
 
 ### Citation ###
 
@@ -24,3 +32,19 @@ Mis- and disinformation are a substantial global threat to our security and safe
     booktitle = {USENIX Security Symposium (USENIX Security)}
 }
 ```
+- - -
+
+### Acknowledgement ###
+
+- We thank the authors of the following repositories: 
+    - [Kernel Graph Attention Network (KGAT)](https://github.com/thunlp/KernelGAT)
+    - [Imperceptible Perturbations](https://github.com/nickboucher/imperceptible)
+    - [BERT-ATTACK](https://github.com/LinyangLee/BERT-Attack)
+    - [Factual Error Correction](https://github.com/j6mes/acl2021-factual-error-correction)
+    - [NLP Adversarial Examples](https://github.com/nesl/nlp_adversarial_examples)
+    - [FEVER Adversarial Attacks](https://github.com/copenlu/fever-adversarial-attacks)
+    - [CorefBERT](https://github.com/thunlp/CorefBERT)
+
+
+- - -
+
