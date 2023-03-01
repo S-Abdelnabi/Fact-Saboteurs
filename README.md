@@ -14,7 +14,7 @@ Mis- and disinformation are a substantial global threat to our security and safe
 </p>
 - - -
 ### Content ###
-- ###Data###
+#### Data ####
     - We share our version of the raw data that was used to train the KGAT and attack models. 
     - We share the attack sentences.
     - For links and detailed descriptions, see [Data](S-Abdelnabi/Fact-Saboteurs/tree/main/data).
@@ -44,7 +44,6 @@ Mis- and disinformation are a substantial global threat to our security and safe
     - [NLP Adversarial Examples](https://github.com/nesl/nlp_adversarial_examples)
     - [FEVER Adversarial Attacks](https://github.com/copenlu/fever-adversarial-attacks)
     - [CorefBERT](https://github.com/thunlp/CorefBERT)
-
 
 - - -
 
