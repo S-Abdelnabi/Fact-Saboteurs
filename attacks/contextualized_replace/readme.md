@@ -27,7 +27,7 @@ python bert_attack.py \
 - To convert the attack's output to the format used by KGAT, run:
 
 ```
-python convert_to_kgat.py \
+python convert_to_kgat_bert_attack.py \
 --infile_attack_pairs <data_dir>/attacks_out_pairs/attack_out \
 --infile_orig bert_eval2.json \
 --outfile <data_dir>/attacks_out_formatted/bert_attack1_kgat.json
