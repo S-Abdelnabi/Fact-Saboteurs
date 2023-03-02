@@ -1,5 +1,5 @@
 ## Contextualized replace
-- This attack is based on the BERT attack paper. Please refer to the authors' [repository](https://github.com/LinyangLee/BERT-Attack) for setup details. You need to compute the *cos_sim_counter_fitting.npy* file - we don't share this because it's a 16GB file :).
+- This attack is based on the BERT attack paper. Please refer to the authors' [repository](https://github.com/LinyangLee/BERT-Attack) for setup details. You need to compute the *cos_sim_counter_fitting.npy* file - we don't share this because it's a 16GB file :)
 - We adjust the original code to work on entailment (pairs for <claim, evidence>).
 - To calculate the attack, we use the [BERT stance verification model](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/stance_verification). 
 - This attack edits the top retrieved sentences by the attacker's retrieval model.
