@@ -20,7 +20,7 @@ python experiment.py -g --pkl_file attack_out_homoglyph --target_model_chkpt <mo
 python experiment.py -d --pkl_file attack_out_delete --target_model_chkpt <model_dir>/stance_model_chpt/model.best.pt  \
 --data_path <data_dir>/all_data/preattack_retrieval_pairs/eval_pairs_retrieval2 \
 --end_idx -1 --min-perturbs 5 --overwrite --maxiter 3
-``
+```
 
 - For swap
 ```
