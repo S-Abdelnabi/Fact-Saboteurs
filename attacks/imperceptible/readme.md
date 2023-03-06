@@ -1,4 +1,9 @@
 ## Imperceptible Perturbation attacks 
+
+<p align="center">
+<img src="https://github.com/S-Abdelnabi/Fact-Saboteurs/blob/main/attacks/imperceptible/imperceptible_attacks.PNG" width="950">
+</p>
+
 - For setup, please refer to this [repository](https://github.com/nickboucher/imperceptible).
 - We compute the attacks on BERT retrieval or verification models.
 - Checkpoints of BERT verification models are [here](https://oc.cs.uni-saarland.de/owncloud/index.php/s/WKqPaHijfBPxoW5).
