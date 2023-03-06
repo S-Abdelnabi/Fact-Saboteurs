@@ -30,7 +30,6 @@ python experiment.py -r --pkl_file attack_out_iters_replace --target_model_chkpt
 ```
 - *target_model_chkpt* is the BERT stance verification model trained on pairs of *<claims,evidence>*. 
 - *data_path* is pairs of *<claims,evidence>*. 
-```
 - - - 
 
 ### Imperceptible on a retrieval model 
@@ -44,5 +43,6 @@ python experiment_retrieval.py -g --pkl_file attack_out_retrieval_homoglyph \
 --data_path <data_dir>/all_data/preattack_retrieval_pairs/eval_pairs_retrieval2 \
 --min-perturbs 5 --maxiter 3
 ```
+
 - KGAT uses BERT base models, which can be found [here](https://oc.cs.uni-saarland.de/owncloud/index.php/s/FJW2sNrKXrqmtSe).
 - This runs the attack against KGAT retrieval model. 
