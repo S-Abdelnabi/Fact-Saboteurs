@@ -46,3 +46,14 @@ python experiment_retrieval.py -g --pkl_file attack_out_retrieval_homoglyph \
 
 - KGAT uses BERT base models, which can be found [here](https://oc.cs.uni-saarland.de/owncloud/index.php/s/FJW2sNrKXrqmtSe).
 - This runs the attack against KGAT retrieval model. 
+
+- - -
+
+### Convert to KGAT format
+```
+python convert_to_kgat_imperceptible.py \
+--infile_preattack_pairs <data_dir>/all_data/preattack_retrieval_pairs/eval_pairs_retrieval2 \
+--infile_attack_pairs attack_out_retrieval_homoglyph \
+--infile_orig <data_dir>/all_data/preattack_retrieval_formatted/bert_eval2.json \
+--outfile <data_dir>/all_data/attacks_out_formatted/imperceptible/imperceptible_retrieval_homoglyph_kgat.json
+```
