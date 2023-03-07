@@ -20,7 +20,8 @@ python generate_paraphrases.py \
   --target_class "SUPPORTS" "REFUTES" \
   --outfile paraphrases_supports_refutes_wb_n5 --n_evi 5 
 ```
-- This step creates paraphrases for all evidence sentences 
+- This step creates paraphrases for evidence sentences.
+- *n_evi* sets how many evidence sentences to create paraphrases for.
 - - - 
 
 ### Sort with the retrieval model 
@@ -33,7 +34,7 @@ python retrieval_checker.py --outdir ./output/ \
 --checkpoint  <kgat_dir>/retrieval_model/model.best.pt \
 --name paraphrases_supports_refutes_wb_n5_retrieval_check.json
 ```
-- This step selects the paraphrase that has the least retrieval score compared to the claim 
+- This step selects the paraphrase that has the least retrieval score compared to the claim.
 - - - 
 
 ### Convert to KGAT format 
