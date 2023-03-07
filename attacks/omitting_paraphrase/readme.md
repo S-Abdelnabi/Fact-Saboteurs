@@ -7,3 +7,7 @@
 <p align="center">
 <img src="https://github.com/S-Abdelnabi/Fact-Saboteurs/blob/main/attacks/omitting_paraphrase/omitting_examples.PNG" width="950">
 </p>
+
+- This attacks uses an off-the-shelf model to create paraphrases for the evidence. 
+
+- - - 
