@@ -11,6 +11,26 @@
 - This attack uses a GPT-2 model that was trained to generate supporting sentences. It creates alternative evidence sentences given the original one as a context. 
 
 -  -  - 
+- For environment setup, check this [repository](https://github.com/copenlu/fever-adversarial-attacks/).
+- To train the GPT-2 model, run:
+
+```
+python train_gpt2_model.py \
+  --dataset_loc <data_dir>/all_data/raw_data/all_train.json \
+  --val_dataset <data_dir>/all_data/raw_data/all_dev.json \
+  --train_pct 1.0 \
+  --n_gpu 1 \
+  --n_epochs 20 \
+  --seed 1000 \
+  --model_dir <gpt2_model_dir>/supports \
+  --batch_size 4 \
+  --lr 0.00003 \
+  --target_class "SUPPORTS" \
+  --run_name supports \
+  --tags "gpt2 training supports"
+  ```
+
+-  -  -  
 
 - To generate alternative evidence sentences, run:
 
@@ -21,8 +41,7 @@ python generate_gpt2_sentences.py \
   --target_class REFUTES SUPPORTS --n_sent 20 --n_evidence 5 \
   --outfile <gpt2_output_dir>/attacks_out_alternative_evidence 
  ```
- 
- -  -  - 
+-  -  - 
 
 - To sort based on the retrieval model, run:
 ```
@@ -39,10 +58,8 @@ python retrieval_checker.py --outdir ./output/ \
 --evi_num 5
 ```
 
- -  -  - 
- 
+-  -  -  
  - To convert to KGAT format, run:
-
 ```
 python convert_to_kgat_evidence_alternative.py \
 --infile_orig <data_dir>/all_data/preattack_retrieval_formatted/bert_eval2.json \
