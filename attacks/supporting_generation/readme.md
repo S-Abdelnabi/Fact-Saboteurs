@@ -55,5 +55,5 @@ python convert_to_kgat_generate_fakepage.py \
 --infile_orig <data_dir>/all_data/preattack_retrieval_formatted/bert_eval2.json \
 --infile_attack_pairs1 <gpt2_model_dir>/supports/attacks_out_refutes_supports_model_trials250_sent2 \
 --infile_attack_pairs2 <gpt2_model_dir>/supports/attacks_out_nei_supports_model_trials250_sent2 \
---outfile <data_dir>/all_data/attacks_out_formatted/gpt2_generate/gpt2_generate_refutes_nei_supports_model_trials250_sent2_kgat.json
+--outfile <data_dir>/all_data/attacks_out_formatted/supporting_generation/gpt2_generate_refutes_nei_supports_model_trials250_sent2_kgat.json
 ```
