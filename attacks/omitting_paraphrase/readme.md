@@ -43,7 +43,7 @@ python retrieval_checker.py --outdir ./output/ \
 python convert_to_kgat_evidence_paraphrase.py \
 --infile_orig  <data_dir>/all_data/preattack_retrieval_formatted/bert_eval2.json \
 --infile_attack_pairs output/paraphrases_supports_refutes_wb_retrieval_check.json \
---outfile <data_dir>/all_data/attacks_out_formatted/paraphrase_evidence/paraphrases_wb_retrieval_check_kgat.json
+--outfile <data_dir>/all_data/attacks_out_formatted/omitting_paraphrase/paraphrases_wb_retrieval_check_kgat.json
 ```
 - This step converts the output to KGAT format.
 
