@@ -21,14 +21,17 @@ Mis- and disinformation are a substantial global threat to our security and safe
 ### Content ###
 #### [Data](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/data) ####
 - We share our version of the raw data that was used to train the KGAT and attack models. 
-- We also share the attack sentences.
+- We also share the attack sentences. 
 
 #### [KGAT](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/kgat) ####
-- We share code to evaluate the attacks on KGAT in addition to checkpoints.
+- We share code to evaluate the attacks on KGAT in addition to checkpoints. To run the attacks, you can either use our attack sentences, or compute them from scratch. 
 
 #### [Stance verification](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/stance_verification) ####
 - We train BERT stance verification models on pairs of <claims,evidence>. This works as the attacker's verification model.
 - We share training code and checkpoints.
+
+#### [Attacks](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/attacks) ####
+- Code to generate the attack sentences from scratch. 
 
 - - -
 
