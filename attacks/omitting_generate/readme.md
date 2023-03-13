@@ -11,7 +11,9 @@
 - This attack uses a GPT-2 model that was trained to generate supporting sentences. It creates alternative evidence sentences given the original one as a context. 
 
 -  -  - 
-- For environment setup, check this [repository](https://github.com/copenlu/fever-adversarial-attacks/).
+### Model Training 
+- We train a GPT-2 model to generate supporting evidence given claims. 
+- For environment setup, check this [repository](https://github.com/copenlu/fever-adversarial-attacks/). 
 - To train the GPT-2 model, run:
 
 ```
@@ -31,7 +33,7 @@ python train_gpt2_model.py \
   ```
 
 -  -  -  
-
+- We then use the GPT-2 model to generate alternative evidence given the original evidence (should have some similarity in context).
 - To generate alternative evidence sentences, run:
 
 ```
@@ -42,7 +44,7 @@ python generate_gpt2_sentences.py \
   --outfile <gpt2_output_dir>/attacks_out_alternative_evidence 
  ```
 -  -  - 
-
+- We then pick the sentence that is the least relevant to the claim (should ideally omit the parts needed to verify the claim).
 - To sort based on the retrieval model, run:
 ```
 export PYTHONPATH=<kgat_dir>/retrieval_model
