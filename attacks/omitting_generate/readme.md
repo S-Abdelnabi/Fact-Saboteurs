@@ -50,7 +50,7 @@ python train_gpt2_model.py \
   --tags "gpt2 training supports 25 subsets"
 ```
 - To train the GPT-2 model with 10% data subset, run:
-
+```
 python train_gpt2_model.py \
   --dataset_loc <data_dir>/all_data/raw_data/train_support_10subset.json \
   --val_dataset <data_dir>/all_data/raw_data/dev_support_10subset.json \
@@ -64,7 +64,7 @@ python train_gpt2_model.py \
   --target_class "SUPPORTS" \
   --run_name supports \
   --tags "gpt2 training supports 10 subsets"
-  
+ ``` 
 
 -  -  -  
 ### Evidence generation 
