@@ -12,6 +12,7 @@
 
 -  -  - 
 ### Model training 
+- All models checkpoints are available [here](https://oc.cs.uni-saarland.de/owncloud/index.php/s/yTxPtwNHzp3fzM2).
 - We train a GPT-2 model to generate supporting evidence given claims. 
 - For environment setup, check this [repository](https://github.com/copenlu/fever-adversarial-attacks/). 
 - To train the GPT-2 model, run:
@@ -31,6 +32,39 @@ python train_gpt2_model.py \
   --run_name supports \
   --tags "gpt2 training supports"
   ```
+- To train the GPT-2 model with 25% data subset, run:
+
+```
+python train_gpt2_model.py \
+  --dataset_loc <data_dir>/all_data/raw_data/train_support_25subset.json \
+  --val_dataset <data_dir>/all_data/raw_data/dev_support_25subset.json \
+  --train_pct 1.0 \
+  --n_gpu 1 \
+  --n_epochs 20 \
+  --seed 1000 \
+  --model_dir <gpt2_model_dir>/supports_25subset \
+  --batch_size 4 \
+  --lr 0.00003 \
+  --target_class "SUPPORTS" \
+  --run_name supports \
+  --tags "gpt2 training supports 25 subsets"
+```
+- To train the GPT-2 model with 10% data subset, run:
+
+python train_gpt2_model.py \
+  --dataset_loc <data_dir>/all_data/raw_data/train_support_10subset.json \
+  --val_dataset <data_dir>/all_data/raw_data/dev_support_10subset.json \
+  --train_pct 1.0 \
+  --n_gpu 1 \
+  --n_epochs 20 \
+  --seed 1000 \
+  --model_dir <gpt2_model_dir>/supports_10subset \
+  --batch_size 4 \
+  --lr 0.00003 \
+  --target_class "SUPPORTS" \
+  --run_name supports \
+  --tags "gpt2 training supports 10 subsets"
+  
 
 -  -  -  
 ### Evidence generation 
