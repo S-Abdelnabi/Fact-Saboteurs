@@ -105,5 +105,5 @@ python retrieval_checker.py --outdir ./output/ \
 python convert_to_kgat_evidence_alternative.py \
 --infile_orig <data_dir>/all_data/preattack_retrieval_formatted/bert_eval2.json \
 --infile_attack_pairs <gpt2_output_dir>/alternative_evidence_supports_refutes_retrieval_check.json \
---outfile <data_dir>/all_data/attacks_out_formatted/alternative_evidence/alternative_evidence_wb_retrieval_check_kgat.json
+--outfile <data_dir>/all_data/attacks_out_formatted/omitting_generate/alternative_evidence_wb_retrieval_check_kgat.json
 ```
