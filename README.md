@@ -24,7 +24,7 @@ Mis- and disinformation are a substantial global threat to our security and safe
 - We also share the attack sentences. 
 
 #### [KGAT](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/kgat) ####
-- We share code to evaluate the attacks on KGAT in addition to checkpoints. To run the attacks, you can either use our attack sentences, or compute them from scratch. 
+- We share code to evaluate the attacks on KGAT in addition to checkpoints. To run the attacks, you can either use our attack sentences, or compute them from scratch (see attacks). 
 
 #### [Stance verification](https://github.com/S-Abdelnabi/Fact-Saboteurs/tree/main/stance_verification) ####
 - We train BERT stance verification models on pairs of <claims,evidence>. This works as the attacker's verification model.
