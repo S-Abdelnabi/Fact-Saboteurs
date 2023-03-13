@@ -99,6 +99,7 @@ python retrieval_checker.py --outdir ./output/ \
 ```
 
 -  -  -  
+### Convert to KGAT format 
  - To convert to KGAT format, run:
 ```
 python convert_to_kgat_evidence_alternative.py \
