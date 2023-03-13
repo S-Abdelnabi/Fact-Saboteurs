@@ -21,6 +21,7 @@
 - Generate 2 evidence sentences (*--n_sent*) for each claim. 
 - Verify if the evidence supports the claim using the stance verification checkpoint (*--verifier_chkpt*)
 - Try 250 samples (*--trials*) to find supporting sentences. This might take a lot of time, you could decrease that number to save time. 
+- Set *--trials* to 1 and do not enable the *--verify* flag if you only need one sample. 
 
 - Convert *refutes* to *supports*: 
 ```
@@ -44,14 +45,15 @@ python generate_gpt2_sentences.py \
  ```
  
 - To generate evidence with the 25% and 10% models experiments, replace *--model_loc* and *--verifier_chkpt* arguments with the corresponding checkpoints.
-```
+
+-  -  - 
+
+ ### Convert to KGAT
+ 
+ ```
 python convert_to_kgat_generate_fakepage.py \
 --infile_orig <data_dir>/all_data/preattack_retrieval_formatted/bert_eval2.json \
 --infile_attack_pairs1 <gpt2_model_dir>/supports/attacks_out_refutes_supports_model_trials250_sent2 \
 --infile_attack_pairs2 <gpt2_model_dir>/supports/attacks_out_nei_supports_model_trials250_sent2 \
 --outfile <data_dir>/all_data/attacks_out_formatted/gpt2_generate/gpt2_generate_refutes_nei_supports_model_trials250_sent2_kgat.json
 ```
-
--  -  - 
-
- ### Convert to KGAT
