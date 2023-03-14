@@ -39,7 +39,7 @@ Mis- and disinformation are a substantial global threat to our security and safe
 
 - If you find this code helpful, please cite our paper:
 ```javascript
-@inproceedings{abdelnabi22cvpr,
+@inproceedings{abdelnabi23usenix,
     title = {Fact-Saboteurs: A Taxonomy of Evidence Manipulation Attacks against Fact-Verification Systems},
     author = {Sahar Abdelnabi and Mario Fritz},
     year = {2023},
